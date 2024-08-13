@@ -32,4 +32,5 @@ public class DepartmentService {
 		List<Employee> list = result.get().getEmployees();
 		return list.stream().map(x -> new EmployeeMinDTO(x)).toList();
 	}
+
 }

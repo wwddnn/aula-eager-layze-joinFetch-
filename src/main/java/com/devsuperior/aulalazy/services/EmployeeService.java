@@ -43,3 +43,4 @@ public class EmployeeService {
 		return result.stream().map(x -> new EmployeeMinDTO(x)).toList();
 	}
 }
+
