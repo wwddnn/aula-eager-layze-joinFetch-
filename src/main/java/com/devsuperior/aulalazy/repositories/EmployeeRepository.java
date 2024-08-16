@@ -13,5 +13,6 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 	List<Employee> findEmployeesWithDepartments();
 
 	//query parameters
+	//'Containing' to do a 'like' database sql.
 	List<Employee> findByNameContainingIgnoreCase(String name);
 }
